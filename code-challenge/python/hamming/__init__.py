@@ -4,7 +4,7 @@
 # unit tests pass and your code meets all of the conditions.
 
 Author: Developer, Dev team
-Last Accessed Date: 25 Aug, 2018
+Last Accessed Date: 28 Aug, 2018
 """
 
 def compute(dna1, dna2):
@@ -16,4 +16,4 @@ def compute(dna1, dna2):
     """
     if len(dna1) != len(dna2):
         raise ValueError("Both DNA strands should be equal length.")
-    return len([a for a,b in zip(dna1,dna2) if a != b])
+    return len([dnaItem for dnaItem, relDnaItem in zip(dna1,dna2) if dnaItem != relDnaItem])
