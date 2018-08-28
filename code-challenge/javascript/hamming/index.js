@@ -4,10 +4,11 @@
 // You may use ES6 or ES5 to solve.
 
 class Hamming{
+
+    // Function to calculate the Hamming distance between the two DNA strands.
     compute(dna1, dna2){
         var hamming_distance = 0
         x;
-
     var _dna1 = dna1.split("");
     var _dna2 = dna2.split("");
     if(_dna1.length != _dna2.length)
