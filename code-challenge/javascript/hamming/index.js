@@ -5,7 +5,7 @@
 
 class Hamming{
     compute(dna1, dna2){
-        var dna_diff = 0
+        var hamming_distance = 0
         x;
 
     var _dna1 = dna1.split("");
@@ -20,11 +20,11 @@ class Hamming{
         {
            if(_dna1[x] != _dna2[x])
            {
-              dna_diff++
+              hamming_distance++
            }
         }
     }
-    return dna_diff
+    return hamming_distance
     }
 }
 
