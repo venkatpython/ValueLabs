@@ -4,31 +4,27 @@
 // You may use ES6 or ES5 to solve.
 
 class Hamming{
-    compute(str1, str2){
-        var string1 = [],
-        string2 = [],
-        diff = 0
+    compute(dna1, dna2){
+        var dna_diff = 0
         x;
 
-    string1 = str1.split("");
-    string2 = str2.split("");
-    console.log(string1)
-    console.log(string2)
-    if(str1.length != str2.length)
+    var _dna1 = dna1.split("");
+    var _dna2 = dna2.split("");
+    if(_dna1.length != _dna2.length)
     {
         throw "DNA strands must be of equal length."
     }
     else
     {
-        for(var x = 0; x < str1.length; x++)
+        for(var x = 0; x < dna1.length; x++)
         {
-           if(string1[x] != string2[x])
+           if(_dna1[x] != _dna2[x])
            {
-              diff++
+              dna_diff++
            }
         }
     }
-    return diff
+    return dna_diff
     }
 }
 
